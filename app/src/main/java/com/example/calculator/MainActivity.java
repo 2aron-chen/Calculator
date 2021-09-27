@@ -13,20 +13,20 @@ public class MainActivity extends AppCompatActivity {
         EditText firstTextField = (EditText) findViewById(R.id.editTextFirstNumber);
         EditText secondTextField = (EditText) findViewById(R.id.editTextSecondNumber);
         String str1 = firstTextField.getText().toString();
-        int iOne=Integer.parseInt(str1);
+        double dOne=Double.parseDouble(str1);
         String str2 = secondTextField.getText().toString();
-        int iTwo=Integer.parseInt(str2);
-        goToActivity2(iOne + iTwo);
+        double dTwo=Double.parseDouble(str2);
+        goToActivity2(dOne + dTwo);
     }
 
     public void clickMinus(View view){
         EditText firstTextField = (EditText) findViewById(R.id.editTextFirstNumber);
         EditText secondTextField = (EditText) findViewById(R.id.editTextSecondNumber);
         String str1 = firstTextField.getText().toString();
-        int iOne=Integer.parseInt(str1);
+        double dOne=Double.parseDouble(str1);
         String str2 = secondTextField.getText().toString();
-        int iTwo=Integer.parseInt(str2);
-        goToActivity2(iOne - iTwo);
+        double dTwo=Double.parseDouble(str2);
+        goToActivity2(dOne - dTwo);
     }
 
     public void clickTime(View view){
@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void goToActivity2(double d){
         Intent intent = new Intent(this, MainActivity2.class);
-        intent.putExtra("next", d);
+        intent.putExtra("double", d);
         startActivity(intent);
     }
 
