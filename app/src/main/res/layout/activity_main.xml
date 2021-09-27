@@ -51,7 +51,8 @@
         android:text="+"
         app:layout_constraintBaseline_toBaselineOf="@+id/button2"
         app:layout_constraintEnd_toStartOf="@+id/button2"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        android:onClick="clickPlus" />
 
     <Button
         android:id="@+id/button2"
@@ -62,7 +63,8 @@
         android:text="-"
         app:layout_constraintEnd_toStartOf="@+id/button3"
         app:layout_constraintStart_toEndOf="@+id/button"
-        app:layout_constraintTop_toBottomOf="@+id/editTextSecondNumber" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextSecondNumber"
+        android:onClick="clickMinus"/>
 
     <Button
         android:id="@+id/button3"
@@ -72,7 +74,8 @@
         android:text="*"
         app:layout_constraintBaseline_toBaselineOf="@+id/button2"
         app:layout_constraintEnd_toStartOf="@+id/button4"
-        app:layout_constraintStart_toEndOf="@+id/button2" />
+        app:layout_constraintStart_toEndOf="@+id/button2"
+        android:onClick="clickTime"/>
 
     <Button
         android:id="@+id/button4"
@@ -81,7 +84,8 @@
         android:text="/"
         app:layout_constraintBaseline_toBaselineOf="@+id/button3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button3" />
+        app:layout_constraintStart_toEndOf="@+id/button3"
+        android:onClick="clickDivide"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
